@@ -18,5 +18,13 @@ This plugin was made in 1.18.2 spigot version.
   | `/easteregg <remove:delete>` | easteregg.remove | Command tu remove an easteregg. |
   | `/easteregg <amount>` | easteregg.amount | Command to know how much easteregg exist. |
   | `/easteregg <help>` | easteregg.help | Command to see all commands. |
+  
+  # Aliases
+  
+  You can use different issue to execute the command.
+
+    . easteregg
+    . eastereggs
+    . eegg
 
 
