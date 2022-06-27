@@ -43,7 +43,7 @@ public class Utils {
     }
 
     /**Here I get all the gifts and I get a random integer for give a random gift to the player*/
-    public void giveGift(Player p){
+    public static void giveGift(Player p){
         List<String> keys = new ArrayList<>();
 
         for(String key: HEasterEggs.getInstance().getConfig().getConfigurationSection("settings.gifts.").getKeys(false)) {
@@ -69,8 +69,7 @@ public class Utils {
             List<String> getTitle = HEasterEggs.getInstance().getConfig().getStringList("messages.validated-title");
             List<String> title = new ArrayList<String>();
             for(String s:getTitle){
-                title.add(s.replace("%prefix%", Utils.getPrefix())
-                        .replace("&","§")
+                title.add(s.replace("&","§")
                         .replace("%max-amount%", getMaxAmount().toString())
                         .replace("%amount%", getPlayerAmount(p).toString()));
             }
@@ -88,10 +87,12 @@ public class Utils {
             List<String> getTitle = HEasterEggs.getInstance().getConfig().getStringList("messages.already-validated-title");
             List<String> title = new ArrayList<String>();
             for(String s:getTitle){
-                title.add(s.replace("%prefix%", Utils.getPrefix()).replace("&","§"));
+                title.add(s.replace("&","§"));
             }
             p.sendTitle(title.get(0), title.get(1), 40, 20,20);
-        }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.already-validated"));
+        }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.already-validated")
+                .replace("%prefix%", Utils.getPrefix())
+                .replace("&","§"));
     }
 
 }

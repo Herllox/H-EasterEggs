@@ -53,6 +53,7 @@ public class headClick implements Listener {
                                 list.add(world + "!" + x + "!" + y + "!" + z);
                                 config.set("eastereggs", list);
                                 config.save(file);
+                                Utils.giveGift(p);
                                 Utils.sendValidation(p);
                                 return;
                             }
@@ -62,6 +63,7 @@ public class headClick implements Listener {
                         list.add(world+"!"+x+"!"+y+"!"+z);
                         config.set("eastereggs", list);
                         config.save(file);
+                        Utils.giveGift(p);
                         Utils.sendValidation(p);
                         return;
                     }

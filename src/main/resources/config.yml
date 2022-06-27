@@ -16,11 +16,11 @@ messages:
   amount: "%prefix% &aActually &e%amount% &aeasteegg exist"
   validated: "%prefix% &aYou have find a new easteegg. &7(&e%amount%&7/&f%max-amount&7)"
   validated-title:
-    - "%prefix%"
+    - "&3H-EasterEggs"
     - "&7(&e%amount%&7/&f%max-amount%&7)"
   already-validated: "%prefix% &cYou have already find this easteegg.)"
   already-validated-title:
-    - "%prefix%"
+    - "&3H-EasterEggs"
     - "&cAlready find"
   help:
     - "&e-------------{ &3H-EasterEggs &e}-------------"
