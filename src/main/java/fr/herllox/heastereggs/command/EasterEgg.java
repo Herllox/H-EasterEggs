@@ -63,7 +63,7 @@ public class EasterEgg implements CommandExecutor {
                     }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.permission").replace("%prefix%", Utils.getPrefix()).replace("&","§"));
                 }else if(args[0].equalsIgnoreCase("help")){
                     if(p.hasPermission("heastereggs.help")){
-                        List<String> list = HEasterEggs.getInstance().getConfig().getStringList("messgaes.help");
+                        List<String> list = HEasterEggs.getInstance().getConfig().getStringList("messages.help");
                         for(int i = 0; i < list.size(); i++){
                             p.sendMessage(list.get(i).replace("&","§"));
                         }

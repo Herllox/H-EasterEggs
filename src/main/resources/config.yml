@@ -11,7 +11,7 @@ messages:
   permission: "%prefix% &cYou don't have permission to execute this command."
   utilisation: "%prefix% &cError: &e/easteregg help&a."
   world-error: "%prefix% &cYou are not in an authorized world."
-  not-existing: "%prefix% &cThis easteegg doesn't existing."
+  not-existing: "%prefix% &cThis easteregg doesn't existing."
   not-head: "%prefix% &cYou need to have a head on your front."
   amount: "%prefix% &aActually &e%amount% &aeasteegg exist"
   validated: "%prefix% &aYou have find a new easteegg. &7(&e%amount%&7/&f%max-amount&7)"
