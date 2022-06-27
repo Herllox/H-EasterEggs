@@ -1,0 +1,36 @@
+messages:
+  prefix: "&3H-EasterEggs"
+  console: "[H-EasterEggs] The command only can be used by a player."
+  added: "%prefix% &aEasterEgg successfully added."
+  deleted: "%prefix% &cEasterEgg successfully deleted."
+  permission: "%prefix% &cYou don't have permission to execute this command."
+  utilisation: "%prefix% &aUtilisation: &e/easteregg <&7(&eadd&7/&eset&7)&e|&7(&eremove&7/&edelete&7)&e>&a."
+  world-error: "%prefix% &cYou are not in an authorized world."
+  not-existing: "%prefix% &cThis easteegg doesn't existing."
+  not-head: "%prefix% &cYou need to have a head on your front."
+  validated: "%prefix% &aYou have find a new easteegg. &7(&e%amount%&7/&f%max-amount&7)"
+  validated-title:
+    - "%prefix%"
+    - "&7(&e%amount%&7/&f%max-amount%&7)"
+  already-validated: "%prefix% &cYou have already find this easteegg.)"
+  already-validated-title:
+    - "%prefix%"
+    - "&cAlready find"
+
+settings:
+  #If set to true the message was sent in title else if it's set to false the massage was sent in the chat.
+  title: true
+  #List of world where the player can click on a easteregg.
+  worlds:
+    - world
+  #List of all the gift the player can get.
+  gifts:
+    1:
+      command: false
+      gift: IRON_INGOT:2
+    2:
+      command: true
+      gift: "say something..."
+
+#List of all the eastereggs created.
+eastereggs: []

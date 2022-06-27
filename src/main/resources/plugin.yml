@@ -4,3 +4,8 @@ main: fr.herllox.heastereggs.HEasterEggs
 api-version: 1.18
 authors: [ Herllox ]
 description: EasterEggs plugin made by Herllox.
+commands:
+  easteregg:
+    aliases:
+      - eegg
+      - eastereggs
