@@ -16,7 +16,6 @@ public class fileUtils {
         }
     }
 
-
     /**Here I check if the player file exists*/
     public static void fileExist(Player player) throws IOException {
         File file = new File("plugins/H-EasterEggs/PlayerData/"+player.getName()+".yml");

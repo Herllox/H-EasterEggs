@@ -9,6 +9,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class EasterEgg implements CommandExecutor {
@@ -55,6 +56,17 @@ public class EasterEgg implements CommandExecutor {
                                 }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.not-existing").replace("%prefix%", Utils.getPrefix()).replace("&", "§"));
                             }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.not-head").replace("%prefix%", Utils.getPrefix()).replace("&","§"));
                         }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.world-error").replace("%prefix%", Utils.getPrefix()).replace("&", "§"));
+                    }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.permission").replace("%prefix%", Utils.getPrefix()).replace("&","§"));
+                }else if(args[0].equalsIgnoreCase("amount")){
+                    if(p.hasPermission("heastereggs.amount")){
+                        p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.amount").replace("%prefix%", Utils.getPrefix()).replace("%amount%", Utils.getMaxAmount().toString()).replace("&", "§"));
+                    }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.permission").replace("%prefix%", Utils.getPrefix()).replace("&","§"));
+                }else if(args[0].equalsIgnoreCase("help")){
+                    if(p.hasPermission("heastereggs.help")){
+                        List<String> list = HEasterEggs.getInstance().getConfig().getStringList("messgaes.help");
+                        for(int i = 0; i < list.size(); i++){
+                            p.sendMessage(list.get(i).replace("&","§"));
+                        }
                     }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.permission").replace("%prefix%", Utils.getPrefix()).replace("&","§"));
                 }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.utilisation").replace("%prefix%", Utils.getPrefix()).replace("&","§"));
             }else p.sendMessage(HEasterEggs.getInstance().getConfig().getString("messages.utilisation").replace("%prefix%", Utils.getPrefix()).replace("&","§"));

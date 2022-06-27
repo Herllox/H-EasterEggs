@@ -31,7 +31,6 @@ public class headClick implements Listener {
                 fileUtils.fileExist(p);
                 File file = new File("plugins/H-EasterEggs/PlayerData/"+p.getName()+".yml");
                 YamlConfiguration config = YamlConfiguration.loadConfiguration(file);
-
                 Block b = e.getClickedBlock();
 
                 int x = b.getX();
@@ -39,7 +38,6 @@ public class headClick implements Listener {
                 int z = b.getZ();
                 String world = b.getWorld().getName();
                 String result = world + "!" + x + "!" + y + "!" + z;
-
                 List<String> list = new ArrayList<>();
 
                 if(HEasterEggs.getInstance().getConfig().getStringList("eastereggs").contains(result)) {
@@ -59,7 +57,6 @@ public class headClick implements Listener {
                                 return;
                             }
                         }
-
                     }else{
                         Utils.sendValidation(p);
                         list.add(world+"!"+x+"!"+y+"!"+z);
@@ -69,10 +66,7 @@ public class headClick implements Listener {
                         return;
                     }
                 }
-
             }
         }
-
     }
-
 }
