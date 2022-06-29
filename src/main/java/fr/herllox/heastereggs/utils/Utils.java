@@ -53,7 +53,7 @@ public class Utils {
         int i = rdm.nextInt(keys.size());
 
         if (HEasterEggs.getInstance().getConfig().getBoolean("settings.gifts." + keys.get(i) + ".command") == true) {
-            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), HEasterEggs.getInstance().getConfig().getString("settings.gifts." + keys.get(i) + ".gift"));
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), HEasterEggs.getInstance().getConfig().getString("settings.gifts." + keys.get(i) + ".gift").replace("%player%", p.getName()));
         } else {
             String[] item = HEasterEggs.getInstance().getConfig().getString("settings.gifts." + keys.get(i) + ".gift").split(":");
             ItemStack it = new ItemStack(Material.getMaterial(item[0]), Integer.parseInt(item[1]));
