@@ -22,11 +22,6 @@ public final class HEasterEggs extends JavaPlugin {
 
     }
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
-
     public static HEasterEggs getInstance() {
         return instance;
     }

@@ -13,7 +13,7 @@ public class fileUtils {
         File folder = new File("plugins/H-EasterEggs/PlayerData");
         if(!folder.exists()){
             folder.mkdir();
-        }
+        }else System.out.println("Folder exists");
     }
 
     /**Here I check if the player file exists*/

@@ -2,14 +2,12 @@ package fr.herllox.heastereggs.command;
 
 import fr.herllox.heastereggs.HEasterEggs;
 import fr.herllox.heastereggs.utils.Utils;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class EasterEgg implements CommandExecutor {

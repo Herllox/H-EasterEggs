@@ -3,7 +3,6 @@ package fr.herllox.heastereggs.event;
 import fr.herllox.heastereggs.HEasterEggs;
 import fr.herllox.heastereggs.utils.Utils;
 import fr.herllox.heastereggs.utils.fileUtils;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.file.YamlConfiguration;

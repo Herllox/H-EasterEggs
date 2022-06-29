@@ -24,7 +24,6 @@ public class Utils {
     public static Integer getPlayerAmount(Player p){
         File file = new File("plugins/H-EasterEggs/PlayerData/"+p.getName()+".yml");
         YamlConfiguration config = YamlConfiguration.loadConfiguration(file);
-
         List<String> list = config.getStringList("eastereggs");
         return list.size();
 
